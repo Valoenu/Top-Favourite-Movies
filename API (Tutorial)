@@ -1,0 +1,22 @@
+This section demonstrates how to interact with The Movie Database (TMDb) API using Python. It covers setting up your API key, defining the endpoint, creating a request with proper parameters, and parsing the JSON response. The tutorial is essential for fetching dynamic movie data like titles, overviews, and images.
+
+
+#.          API Tutorial
+# ~ Go settings, API and get API key, Copy API key and paste ~
+
+API = "Your API Key Here" 
+
+# ~ Get endpoint (Check API Reference) ~
+ENDPOINT = "https://api.themoviedb.org/3/search/movie"
+
+# ~ Set relevant parameters to search movie (Remember, when you working with parameters it should be python dictionary) ~
+paramaters = {
+    'key': "value")
+}
+
+# ~ Make API Request working ~
+response = requests.get(ENDPOINT, params=parameters)
+responss.raise_for_status()
+data = response.json()
+
+#.          API TUTORIAL
