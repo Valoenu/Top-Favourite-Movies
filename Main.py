@@ -26,7 +26,7 @@ Bootstrap5(app)
 class Base(DeclarativeBase):
     pass
 
-database.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database-one-movies.db"
+app = database.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///database-one-movies.db"
 
 
 #   ~ Creating extansion for your database ~
